@@ -1,0 +1,23 @@
+Sample Application to understand the Exhibit Pattern
+
+=== Overview
+The application can render a reading list in json, csv and HTML with the help of the ReadingListExhibit.
+
+1. To render JSON:
+curl http://0.0.0.0:3001/api/v1/reading_lists/1.json
+
+2. To render CSV:
+curl http://0.0.0.0:3001/api/v1/reading_lists/1.csv
+
+3. To render HTML:
+
+  rails s
+  open browser on http://0.0.0.0:3000
+
+=== Installation notice
+
+rake db:create
+rake db:migrate
+rake db:seeds
+
+
