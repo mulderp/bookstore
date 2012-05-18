@@ -1,5 +1,3 @@
-require 'display-case/exhibit'
-
 class ReadingListExhibit < Exhibit
 
   def self.applicable_to?(object)
