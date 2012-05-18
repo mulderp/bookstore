@@ -1,7 +1,3 @@
-require 'display-case/enumerable_exhibit'
-require 'display-case/exhibit'
-require 'display-case/exhibits_helper'
-
 class ReadingListsController < ApplicationController 
 
   respond_to :html
