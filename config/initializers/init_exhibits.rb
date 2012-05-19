@@ -1,1 +1,0 @@
-ReadingListExhibit.new(nil,nil)

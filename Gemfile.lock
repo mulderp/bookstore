@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mulderp/display-case.git
-  revision: f4078d95edf0bc00e67a204ec953c4b42d39427d
+  revision: 3ca3a41970d4602a38126d02927bbe4569f351bb
   specs:
     display_case (0.0.0)
 
