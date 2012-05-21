@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/mulderp/display-case.git
-  revision: 3ca3a41970d4602a38126d02927bbe4569f351bb
+  remote: git://github.com/objects-on-rails/display-case.git
+  revision: b867c331692eade509e4166b3658c674fcd2508e
   specs:
     display_case (0.0.0)
 
