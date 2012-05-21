@@ -6,12 +6,13 @@ class ReadingListExhibit < Exhibit
   end
 
   def to_json(options={})
-    output = ""
-    books.each do |book|
+    output = "["
+    books[0..-2].each do |book|
       output << " { \"book\": #{book.to_json}"
-      output << " }"
+      output << " },\n"
     end
-    output
+    output << " book: { #{books[-1].to_json} } "
+    output << "]"
   end
 
   def to_csv(options={})
