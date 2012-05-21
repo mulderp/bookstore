@@ -23,7 +23,15 @@ class ReadingListExhibit < Exhibit
     output
   end
 
+  def render_navigation(template)
+    template.render(:partial => "shared/reading_list_navigation", :locals => { :other_reading_lists => ReadingList.without_current(__getobj__) })
+  end
+
   def render_books(template)
     template.render(:partial => "shared/book", :collection => self.books)
+  end
+
+  def render_overview(template)
+    template.render(:partial => 'shared/reading_list', :object => __getobj__) 
   end
 end

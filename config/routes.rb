@@ -9,7 +9,7 @@ Bookstore::Application.routes.draw do
   
   resources :reading_lists
 
-  root :to => "reading_lists#show", :id => 1
+  root :to => "reading_lists#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

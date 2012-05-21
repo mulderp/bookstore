@@ -9,4 +9,9 @@ class ReadingListsController < ApplicationController
     respond_with(@reading_list)
   end
 
+  def index
+    @reading_lists = exhibit(ReadingList.all)
+    respond_with(@reading_lists)
+  end
+
 end

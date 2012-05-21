@@ -1,0 +1,6 @@
+<%= link_to "Back to overview", root_path %> |
+
+Alternative reading lists:
+<% other_reading_lists.each do |reading_list| %>
+<%= link_to reading_list.name, reading_list_path(reading_list.id) %>
+<% end %>
