@@ -1,4 +1,4 @@
-class ReadingListExhibit < Exhibit
+class ReadingListExhibit < DisplayCase::Exhibit
 
   def self.applicable_to?(object)
     Rails.logger.debug("app/exhibiit #{object}")

@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/objects-on-rails/display-case.git
-  revision: b867c331692eade509e4166b3658c674fcd2508e
+  revision: c611be2c1443ed3121b85743ed60a0cef2588ae8
   specs:
-    display_case (0.0.0)
+    display_case (0.0.2)
 
 GEM
   remote: https://rubygems.org/

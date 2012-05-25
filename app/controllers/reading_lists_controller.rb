@@ -2,7 +2,7 @@ class ReadingListsController < ApplicationController
 
   respond_to :html
 
-  include ExhibitsHelper
+  include DisplayCase::ExhibitsHelper
 
   def show
     @reading_list = exhibit(ReadingList.find(params[:id]), self)

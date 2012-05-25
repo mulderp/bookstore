@@ -45,5 +45,5 @@ end
 # Display-Case gem environments
 # gem 'display_case', :path => '../display-case'
 # gem 'display_case', :git => 'git://github.com/mulderp/display-case.git'
- gem 'display_case', :git => 'git://github.com/objects-on-rails/display-case.git'
+gem 'display_case', :git => 'git://github.com/objects-on-rails/display-case.git'
 
