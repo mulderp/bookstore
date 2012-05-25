@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<div class="nav-header">
+  <div class="brand">
+    <h3>  <%= link_to "Bookstore", root_path %></h3>
+  </div>
+  <div class="profile-nav" style="float: right">
+    <%= @current_user.render_navigation_profile(self)  %>
+  </div>
+</div>
+
 <%= yield %>
 
 </body>
