@@ -1,4 +1,15 @@
 
-<% @reading_lists.each do |e| %>
-  <%= e.render_overview(self) %>
-<% end %>
+<div class="row-fluid">
+  <div class="span8">
+    <% @books.each do |book| %>
+      <%= book.render_book(self) %>
+    <% end %>
+   </div>
+
+   <div class="span2">
+      Suggested Reading Lists:
+      <% @reading_lists.each do |e| %>
+        <%= e.render_overview(self) %>
+      <% end %>
+   </div>
+</div>

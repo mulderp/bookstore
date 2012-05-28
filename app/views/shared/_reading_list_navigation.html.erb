@@ -1,6 +1,14 @@
-<%= link_to "Back to overview", root_path %> |
+<ul>
+  <li>
+    <%= link_to "Back to overview", root_path %> 
+  </li>
 
-Alternative reading lists:
-<% other_reading_lists.each do |reading_list| %>
-<%= link_to reading_list.name, reading_list_path(reading_list.id) %>
-<% end %>
+  <li>
+    Alternative reading lists:
+  </li>
+  <% other_reading_lists.each do |reading_list| %>
+    <li>
+      <%= link_to reading_list.name, reading_list_path(reading_list.id) %>
+    </li>
+  <% end %>
+</ul>
