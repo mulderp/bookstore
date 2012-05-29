@@ -1,8 +1,8 @@
 <ul>
-  <li>
-    <%= link_to "Back to overview", root_path %> 
-  </li>
-
+  <h5>
+    Selected Reading List:
+    <%= selected_reading_list %>
+  </h5>
   <li>
     Alternative reading lists:
   </li>
@@ -11,4 +11,7 @@
       <%= link_to reading_list.name, reading_list_path(reading_list.id) %>
     </li>
   <% end %>
+  <li>
+    <%= link_to "Back to overview", root_path %> 
+  </li>
 </ul>

@@ -23,7 +23,7 @@ class ReadingListExhibit < DisplayCase::Exhibit
   end
 
   def render_navigation(template)
-    template.render(:partial => "shared/reading_list_navigation", :locals => { :other_reading_lists => ReadingList.without_current(__getobj__) })
+    template.render(:partial => "shared/reading_list_navigation", :locals => { :selected_reading_list => self.name, :other_reading_lists => ReadingList.without_current(__getobj__) })
   end
 
   def render_books(template)
