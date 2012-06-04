@@ -5,4 +5,5 @@ class SessionsController < Devise::SessionsController
 
   include DisplayCase::ExhibitsHelper
 
+
 end
