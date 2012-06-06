@@ -1,6 +1,11 @@
 Bookstore::Application.routes.draw do
 
-  devise_for :users, { :controllers => {:registrations => "registrations", :sessions => "sessions", :passwords => "passwords"}}
+  get "dashboard/index"
+
+  devise_for :users, { :controllers => {:registrations => "users/registrations", :sessions => "users/sessions", :passwords => "users/passwords"}}
+
+  match 'dashboard' => 'dashboard#index', as: :user_root                                                                                                           
+
 
   namespace :api do
     namespace :v1 do

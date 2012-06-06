@@ -56,5 +56,14 @@ module Bookstore
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.generators do |g|
+      g.test_framework :rspec,
+        fixtures: false,
+        helper_specs: false,
+        routing_specs: true,
+        controller_specs: true,
+        request_specs: true
+    end
+
   end
 end

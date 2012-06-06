@@ -1,0 +1,8 @@
+<h1>User Dashboard</h1>
+
+   <div class="span2 well">
+      My Reading Lists:
+      <% @reading_lists.each do |e| %>
+        <%= e.render_overview(self) %>
+      <% end %>
+   </div>

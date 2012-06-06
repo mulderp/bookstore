@@ -28,7 +28,8 @@ gem 'devise'
 
 group :test do
   gem 'rspec-rails'
-  gem 'factory_girl'
+  gem 'capybara'
+  gem 'launchy'
 end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
