@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  attr_accessible :first_name, :last_name
+  attr_accessible :first_name, :last_name, :login
 
   def self.prototype
     user = self.new
@@ -18,4 +18,7 @@ class User < ActiveRecord::Base
     user
   end
 
+  def to_param
+    login
+  end
 end

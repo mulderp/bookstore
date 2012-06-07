@@ -2,7 +2,17 @@ Bookstore::Application.routes.draw do
 
   get "dashboard/index"
 
-  devise_for :users, { :controllers => {:registrations => "users/registrations", :sessions => "users/sessions", :passwords => "users/passwords"}}
+  as :user do
+    match "/login", :to => "authentication/sessions#new", as: :new_user_session
+    match "/logout", :to => "authentication/sessions#new", as: :destroy_user_session
+    match "/signup", :to => "authentication/registrations#new", as: :new_user_registration
+    match "/settings/profile", :to => "authentication/registrations#edit", as: :edit_user_registration
+  end
+
+  scope ":login", :as => :user do
+  end
+
+  devise_for :users, { :controllers => {:registrations => "authentication/registrations", :sessions => "authentication/sessions", :passwords => "authentication/passwords"}}
 
   match 'dashboard' => 'dashboard#index', as: :user_root                                                                                                           
 
