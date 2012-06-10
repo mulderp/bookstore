@@ -13,4 +13,8 @@ class UserExhibit < DisplayCase::Exhibit
     end
   end
 
+  def render_root_path(template)
+    template.link_to "Bookstore", root_path, :class => "brand"
+  end
+
 end

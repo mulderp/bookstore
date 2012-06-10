@@ -3,8 +3,8 @@ Bookstore::Application.routes.draw do
   get "dashboard/index"
 
   as :user do
-    match "/login", :to => "authentication/sessions#new", as: :new_user_session
-    match "/logout", :to => "authentication/sessions#new", as: :destroy_user_session
+    get "/login", :to => "authentication/sessions#new", as: :new_user_session
+    delete "/logout", :to => "authentication/sessions#new", as: :destroy_user_session
     match "/signup", :to => "authentication/registrations#new", as: :new_user_registration
     match "/settings/profile", :to => "authentication/registrations#edit", as: :edit_user_registration
   end

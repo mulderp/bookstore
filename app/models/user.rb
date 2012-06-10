@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :first_name, :last_name, :login
 
+  belongs_to :organization, :polymorphic => true
+
   def self.prototype
     user = self.new
     user.first_name = "Peter"
